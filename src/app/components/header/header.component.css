@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.content {
+  height: 80px;
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+.p  {
+  display: table;
+  text-align: center;
+  color: orange;
+  font-size: 2em;
+  font-weight: bolder;
+}
+span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.item2 {
+  display: grid;
+  grid-template-columns: 70% 30%
+}
+.right2 {
+  color: lightcyan;
+  text-align: center;
+  height: 100%;
+  display: table;
+}
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+.middle ul li {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1em;font-weight: bolder;
+  text-transform: uppercase;
+  margin: 5px;
+}
+.middle ul li:hover {
+  color: rebeccapurple;
+}
+.right2 button {
+  color: white;
+}
+.example-fill-remaining-space {
+  /* This fills the remaining space with flexbox. */
+  flex: 1 1 auto;
+}
+

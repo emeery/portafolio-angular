@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.home {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: 1fr;
+}
+.land {
+  background: url("http://findmatthew.com/style/../img/filler.png") center center/cover;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+.center span { display: contents; }
+.text {
+  font-size: 32pt;
+  line-height: 45pt;
+  color:aliceblue;
+}
+.highlight {
+  font-family: 'Roboto', sans-serif;
+  font-size: 50pt;
+  font-weight: bold;
+  color: #E31B6D;
+}
+.c {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.btn {
+  background: transparent;
+  margin: 0 auto;
+  width: 40%;
+  height: 55px;
+  border: 2px solid #fff;
+  font-size: 13pt;
+  transition: all .5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn .fa-chevron-right {
+  color: lightblue;
+  font-size: 1.5em;
+}
+.edit {
+  color: red;
+}
+/* .rotar {
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+}
+.rotar .rotamas {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+} */
+/* .rotar:hover {
+  background: rebeccapurple;
+  border: 2px solid rebeccapurple;
+  color: lightcyan;
+} */
+
+

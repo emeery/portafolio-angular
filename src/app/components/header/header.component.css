@@ -17,7 +17,7 @@ span {
 }
 .item2 {
   display: grid;
-  grid-template-columns: 70% 30%
+  grid-template-columns: 90% 10%
 }
 .right2 {
   color: lightcyan;
@@ -29,19 +29,28 @@ span {
   display: table-cell;
   vertical-align: middle;
 }
+.middle2 {
+  display: table-cell;
+  vertical-align: middle;
+  background: sandybrown;
+}
 .middle ul li {
   cursor: pointer;
   display: inline-block;
-  font-size: 1.1em;font-weight: bolder;
+  font-size: 1.5vw;
+  font-weight: bolder;
   text-transform: uppercase;
   margin: 5px;
 }
 .middle ul li:hover {
   color: rebeccapurple;
 }
-.right2 button {
-  color: white;
+@media screen and (max-width:741px) {
+  .middle {
+    display: none;
+  }
 }
+
 .example-fill-remaining-space {
   /* This fills the remaining space with flexbox. */
   flex: 1 1 auto;

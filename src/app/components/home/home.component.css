@@ -6,7 +6,7 @@
   grid-template-columns: 1fr;
 }
 .land {
-  background: url("http://findmatthew.com/style/../img/filler.png") center center/cover;
+  background: url("https://momentumdash.com/backgrounds/01.jpg") center center/cover;
 }
 .center {
   display: flex;
@@ -21,7 +21,7 @@
 }
 .center span { display: contents; }
 .text {
-  font-size: 32pt;
+  font-size: 5vw;
   line-height: 45pt;
   color:aliceblue;
 }

@@ -1,4 +1,7 @@
 import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
+import { MatDialog, MatDialogConfig } from '@angular/material';
+import { DialogoComponent } from '../dialogo/dialogo.component';
+
 
 @Component({
   selector: 'app-home',
@@ -6,10 +9,12 @@ import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  // constructor(private el: ElementRef) { }
+  constructor(public dlg: MatDialog) {}
+  openDialogo() {
 
-  // @HostListener('mouseenter') onMouseEnter() {
-  //   this.el.nativeElement.addClass = 'edit';
-  //   console.log('yyy');
-  // }
+    this.dlg.open(DialogoComponent , {
+      width: '50%',
+      panelClass: 'custom-modalbox'
+    });
+  }
 }

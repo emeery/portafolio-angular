@@ -8,13 +8,16 @@ import { HomeComponent } from './components/home/home.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './material.module';
+import { DialogoComponent } from './components/dialogo/dialogo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    DialogoComponent
   ],
+  entryComponents: [ DialogoComponent ],
   imports: [
     AngularMaterialModule,
     BrowserModule,

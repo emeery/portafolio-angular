@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+. {  }
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
 .content {
-  height: 80px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* height: 80px;
   display: grid;
-  grid-template-columns: 10% 80% 10%;
+  grid-template-columns: 10% 80% 10%; */
 }
 .p  {
   display: table;
@@ -46,4 +51,3 @@ span {
   /* This fills the remaining space with flexbox. */
   flex: 1 1 auto;
 }
-

@@ -3,6 +3,7 @@
 /* tools */
 .custom-tools .mat-dialog-container {
   background:  #34495e !important;
+  border: solid 2px rebeccapurple;
 }
 .custom-tools .mat-dialog-content .mat-card {
   background:  #34495e !important;
@@ -24,11 +25,11 @@
 }
 /* me */
 .custom-me .mat-dialog-container {
-  background: #5d6d7e;
+  background: #34495e;
+  border: solid 2px teal;
 }
 .custom-me .mat-dialog-content .mat-card{
-  background: #5d6d7e;
-
+  background: #34495e;
 }
 .me {
   display: flex;
@@ -36,5 +37,10 @@
 }
 .me img {
   width: 50%;
+}
+.text {
+  color: lightblue;
+  font-size: 1.1em;
+  text-align: center;
 }
 

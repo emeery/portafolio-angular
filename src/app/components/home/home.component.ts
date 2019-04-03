@@ -11,13 +11,13 @@ import { MeComponent } from '../me/me.component';
 })
 export class HomeComponent {
   constructor(public dlg: MatDialog) {}
-  openDialogo() {
+  openHerramientas() {
     this.dlg.open(TechComponent , {
       width: '50%',
       panelClass: 'custom-tools'
     });
   }
-  openBio() {
+  openBiografia() {
     this.dlg.open(MeComponent , {
       width: '50%',
       panelClass: 'custom-me'

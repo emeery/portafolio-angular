@@ -10,6 +10,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './material.module';
 import { DialogoComponent } from './components/dialogo/dialogo.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MeComponent } from './components/me/me.component';
 
 @NgModule({
   declarations: [
@@ -17,9 +18,10 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     HomeComponent,
     DialogoComponent,
-    FooterComponent
+    FooterComponent,
+    MeComponent
   ],
-  entryComponents: [ DialogoComponent ],
+  entryComponents: [ DialogoComponent, MeComponent ],
   imports: [
     AngularMaterialModule,
     BrowserModule,

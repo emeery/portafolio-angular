@@ -31,16 +31,6 @@
 .custom-me .mat-dialog-content .mat-card{
   background: #34495e;
 }
-.me {
-  display: flex;
-  justify-content: center;
-}
-.me img {
-  width: 50%;
-}
-.text {
-  color: lightblue;
-  font-size: 1.1em;
-  text-align: center;
-}
+
+
 

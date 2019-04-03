@@ -1,1 +1,15 @@
-
+.me {
+  display: flex;
+  justify-content: center;
+}
+.me img {
+  width: 50%;
+}
+.text {
+  color: lightblue;
+  font-size: 1.1em;
+  text-align: center;
+}
+.text span {
+  font-weight: bold;
+}

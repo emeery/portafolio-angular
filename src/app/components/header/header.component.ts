@@ -8,10 +8,8 @@ import { Component, OnInit, HostBinding, HostListener } from '@angular/core';
 export class HeaderComponent implements OnInit {
   isFixedNavbar: boolean;
   @HostBinding('class.navbar-opened') navbarOpened = false;
-  constructor(
-  ) { }
-  ngOnInit() {
-  }
+  constructor() {}
+  ngOnInit() {}
   // @HostListener('window:scroll', [])
   // onWindowScroll() {
   //   const offset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;

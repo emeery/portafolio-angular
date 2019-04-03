@@ -18,9 +18,29 @@
 .custom-modalbox .mat-progress-bar .mat-primary {
   color: red;
 }
+/* header */
 .custom-header .mat-toolbar {
   background: transparent;
 }
-/* .custom-header .mat-toolbar span {
-  font-size: 2em;
+/* me */
+.custom-me .mat-dialog-container {
+  background: #5d6d7e;
+}
+.custom-me .mat-dialog-content .mat-card{
+  background: #5d6d7e;
+
+}
+.me {
+  display: flex;
+  justify-content: center;
+}
+.me img {
+  width: 50%;
+}
+/* .custom-me
+.mat-dialog-content
+.mat-card
+.mat-card-image {
+  background: #5d6d7e;
+  overflow:hidden;
 } */

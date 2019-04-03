@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material';
 import { DialogoComponent } from '../dialogo/dialogo.component';
+import { MeComponent } from '../me/me.component';
 
 
 @Component({
@@ -16,5 +17,12 @@ export class HomeComponent {
       width: '50%',
       panelClass: 'custom-modalbox'
     });
+  }
+  openBio() {
+    this.dlg.open(MeComponent , {
+      width: '50%',
+      panelClass: 'custom-me'
+    });
+  }
   }
 }

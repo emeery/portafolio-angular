@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialog, MatDialogConfig } from '@angular/material';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-me',
@@ -7,14 +6,6 @@ import { MatDialog, MatDialogConfig } from '@angular/material';
   styleUrls: ['./me.component.css']
 })
 export class MeComponent {
-  img: 'https://i.imgur.com/5EQVRw8.png';
-  // constructor(public dlg: MatDialog) { }
-  // openDialogo() {
 
-  //   this.dlg.open( , {
-  //     width: '50%',
-  //     panelClass: 'custom-modalbox'
-  //   });
-  // }
 
 }

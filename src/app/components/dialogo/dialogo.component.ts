@@ -6,7 +6,7 @@ import { MatDialog, MatDialogConfig } from '@angular/material';
   templateUrl: './dialogo.component.html',
   styleUrls: ['./dialogo.component.css']
 })
-export class DialogoComponent implements OnInit {
+export class TechComponent implements OnInit {
 
   constructor(public dialogo: MatDialog) { }
 

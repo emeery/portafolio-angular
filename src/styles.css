@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-
+/* tools */
 .custom-modalbox .mat-dialog-container {
   background:  #34495e !important;
 }
@@ -37,10 +37,4 @@
 .me img {
   width: 50%;
 }
-/* .custom-me
-.mat-dialog-content
-.mat-card
-.mat-card-image {
-  background: #5d6d7e;
-  overflow:hidden;
-} */
+

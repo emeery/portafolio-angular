@@ -1,6 +1,6 @@
-import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
-import { MatDialog, MatDialogConfig } from '@angular/material';
-import { DialogoComponent } from '../dialogo/dialogo.component';
+import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { TechComponent } from '../dialogo/dialogo.component';
 import { MeComponent } from '../me/me.component';
 
 
@@ -13,7 +13,7 @@ export class HomeComponent {
   constructor(public dlg: MatDialog) {}
   openDialogo() {
 
-    this.dlg.open(DialogoComponent , {
+    this.dlg.open(TechComponent , {
       width: '50%',
       panelClass: 'custom-modalbox'
     });

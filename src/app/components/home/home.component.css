@@ -43,11 +43,39 @@
   justify-content: space-evenly;
   margin-bottom: 5px;
 }
-
+#btn:hover {
+  background: rebeccapurple;
+}
+#btn:hover span {
+  color: lightblue;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+  font-size: 20px;
+}
+#btn:hover #flecha {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
 .btn .fa-chevron-right {
   color: lightblue;
   font-size: 1.5em;
 }
+#flecha {
+  font-weight: bold;
+  position: relative;
+  top: 8px;
+}
+#flecha {
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+}
+
 /* .edit {
   color: red;
 } */

@@ -12,10 +12,9 @@ import { MeComponent } from '../me/me.component';
 export class HomeComponent {
   constructor(public dlg: MatDialog) {}
   openDialogo() {
-
     this.dlg.open(TechComponent , {
       width: '50%',
-      panelClass: 'custom-modalbox'
+      panelClass: 'custom-tools'
     });
   }
   openBio() {
@@ -23,6 +22,5 @@ export class HomeComponent {
       width: '50%',
       panelClass: 'custom-me'
     });
-  }
   }
 }

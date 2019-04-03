@@ -1,16 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { MatDialog, MatDialogConfig } from '@angular/material';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-dialogo',
-  templateUrl: './dialogo.component.html',
-  styleUrls: ['./dialogo.component.css']
+  templateUrl: './dialogo.component.html'
 })
-export class TechComponent implements OnInit {
-
-  constructor(public dialogo: MatDialog) { }
-
-  ngOnInit() {
-  }
-
-}
+export class TechComponent {}

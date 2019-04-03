@@ -18,3 +18,9 @@
 .custom-modalbox .mat-progress-bar .mat-primary {
   color: red;
 }
+.custom-header .mat-toolbar {
+  background: transparent;
+}
+/* .custom-header .mat-toolbar span {
+  font-size: 2em;
+} */

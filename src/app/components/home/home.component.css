@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Abel');
 .home {
   display: grid;
   height: 100vh;
@@ -23,13 +24,15 @@
 .text {
   font-size: 5vw;
   line-height: 45pt;
-  color:aliceblue;
+  color:lightcyan;
+  font-family: 'Abel' sans-serif;
+  font-weight: 500;
 }
 .highlight {
   font-family: 'Roboto', sans-serif;
   font-size: 50pt;
   font-weight: bold;
-  color: #E31B6D;
+  color: rgb(50, 154, 189);
 }
 .c {
   text-align: center;
@@ -52,9 +55,9 @@
   color: lightblue;
   font-size: 1.5em;
 }
-.edit {
+/* .edit {
   color: red;
-}
+} */
 /* .rotar {
   -moz-transition: all 0.25s ease-out;
   -ms-transition: all 0.25s ease-out;

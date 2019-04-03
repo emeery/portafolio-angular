@@ -1,58 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-.content {
-  height: 80px;
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-}
-.p  {
-  display: table;
-  text-align: center;
-  color: orange;
-  font-size: 2em;
-  font-weight: bolder;
-}
-span {
-  display: table-cell;
-  vertical-align: middle;
-}
-.item2 {
-  display: grid;
-  grid-template-columns: 90% 10%
-}
-.right2 {
-  color: lightcyan;
-  text-align: center;
-  height: 100%;
-  display: table;
-}
-.middle {
-  display: table-cell;
-  vertical-align: middle;
-}
-.middle2 {
-  display: table-cell;
-  vertical-align: middle;
-  background: sandybrown;
-}
-.middle ul li {
-  cursor: pointer;
-  display: inline-block;
-  font-size: 1.5vw;
-  font-weight: bolder;
-  text-transform: uppercase;
-  margin: 5px;
-}
-.middle ul li:hover {
-  color: rebeccapurple;
-}
-@media screen and (max-width:741px) {
-  .middle {
-    display: none;
-  }
-}
-
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 .example-fill-remaining-space {
-  /* This fills the remaining space with flexbox. */
+  /* This fills the remaining space, by using flexbox.
+     Every toolbar row uses a flexbox row layout. */
   flex: 1 1 auto;
 }
-
+#logo {
+  color: rgb(235, 210, 171);
+  font-size: 1.5em;
+  font-family: 'Pacifico', cursive;
+}

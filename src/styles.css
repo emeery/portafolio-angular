@@ -31,6 +31,8 @@
 .custom-me .mat-dialog-content .mat-card{
   background: #34495e;
 }
-
+.mat-snack-bar-container {
+  background: rebeccapurple;
+}
 
 

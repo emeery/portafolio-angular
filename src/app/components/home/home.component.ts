@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material';
-import { TechComponent } from '../dialogo/dialogo.component';
+import { MatDialog, MatSnackBar } from '@angular/material';
+import { TechComponent } from '../tech/tech.component';
 import { MeComponent } from '../me/me.component';
+import { CorreoComponent } from '../correo/correo.component';
 
 
 @Component({
@@ -10,7 +11,8 @@ import { MeComponent } from '../me/me.component';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  constructor(public dlg: MatDialog) {}
+  constructor(public dlg: MatDialog, private snack: MatSnackBar) {}
+  duracion = 10;
   openHerramientas() {
     this.dlg.open(TechComponent , {
       width: '50%',
@@ -21,6 +23,11 @@ export class HomeComponent {
     this.dlg.open(MeComponent , {
       width: '50%',
       panelClass: 'custom-me'
+    });
+  }
+  openCorreo() {
+    this.snack.openFromComponent(CorreoComponent, {
+      duration: this.duracion * 1000,
     });
   }
 }

@@ -10,7 +10,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './material.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { MeComponent } from './components/me/me.component';
-import { TechComponent } from './components/dialogo/dialogo.component';
+import { TechComponent } from './components/tech/tech.component';
+import { CorreoComponent } from './components/correo/correo.component';
 
 @NgModule({
   declarations: [
@@ -18,10 +19,11 @@ import { TechComponent } from './components/dialogo/dialogo.component';
     HeaderComponent,
     HomeComponent,
     TechComponent,
+    CorreoComponent,
     FooterComponent,
-    MeComponent
+    MeComponent,
   ],
-  entryComponents: [ TechComponent, MeComponent ],
+  entryComponents: [ TechComponent, MeComponent, CorreoComponent ],
   imports: [
     AngularMaterialModule,
     BrowserModule,

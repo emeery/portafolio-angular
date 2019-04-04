@@ -45,9 +45,6 @@
   -webkit-transition: all 0.25s ease-out;
   font-size: 19px;
 }
-/* #btn-me #flecha {
-  padding-left: 27px;
-} */
 #btn-me:hover #flecha {
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -96,6 +93,49 @@
   -o-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
 }
+/* correo */
+/* .btn-tools {
+  background: transparent;
+  margin: 0 auto;
+  width: 40%;
+  height: 55px;
+  border: 2px solid #fff;
+  font-size: 2.1vw;
+  transition: all .5s;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+.btn-tools .fa-chevron-right {
+  color: lightblue;
+  font-size: 1.5em;
+} */
+/* id */
+#btn-eml:hover {
+  border: 2px solid #e74c3c;
+  background:#e74c3c;
+}
+#btn-eml span {
+  position: relative;
+  top: 25%;
+}
+#btn-eml:hover span {
+  color: lightblue;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+  font-size: 19px;
+}
+#btn-eml:hover #flecha {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+
 #flecha {
   font-weight: bold;
   position: relative;

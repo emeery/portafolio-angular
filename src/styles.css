@@ -31,8 +31,14 @@
 .custom-me .mat-dialog-content .mat-card{
   background: #34495e;
 }
+/* snack */
 .mat-snack-bar-container {
-  background: rebeccapurple;
+  background: #2e4053;
+  border: 2px solid #e74c3c;
+  width: 54% !important;
 }
-
+.mat-snack-bar-container .example-pizza-party {
+  color: lightblue;
+  font-size: 1.6em;
+}
 

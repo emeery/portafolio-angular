@@ -3,9 +3,9 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app-correo',
   template: `
-  <span class="example-pizza-party">
-  Pizza party!!! 🍕
-  </span> `,
+  <div class="example-pizza-party">
+  gerardobautista40<i class="fas fa-at"></i>outlook.com
+  </div> `,
   encapsulation: ViewEncapsulation.None
 })
 export class CorreoComponent {}

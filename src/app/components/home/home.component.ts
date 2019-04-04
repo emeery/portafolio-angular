@@ -12,7 +12,7 @@ import { CorreoComponent } from '../correo/correo.component';
 })
 export class HomeComponent {
   constructor(public dlg: MatDialog, private snack: MatSnackBar) {}
-  duracion = 10;
+  duracion = 5;
   openHerramientas() {
     this.dlg.open(TechComponent , {
       width: '50%',

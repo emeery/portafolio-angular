@@ -24,6 +24,7 @@
   font-size: 7vw;
   font-weight: bold;
   color: rgb(50, 154, 189);
+  text-shadow: -1px 0 lightblue, 0 1px lightblue, 1px 0 lightblue, 0 -1px lightblue;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -93,26 +94,6 @@
   -o-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
 }
-/* correo */
-/* .btn-tools {
-  background: transparent;
-  margin: 0 auto;
-  width: 40%;
-  height: 55px;
-  border: 2px solid #fff;
-  font-size: 2.1vw;
-  transition: all .5s;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 5px;
-  border-radius: 4px;
-}
-.btn-tools .fa-chevron-right {
-  color: lightblue;
-  font-size: 1.5em;
-} */
-/* id */
 #btn-eml:hover {
   border: 2px solid #e74c3c;
   background:#e74c3c;
@@ -135,7 +116,29 @@
   -o-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
 }
-
+@media screen and (max-width:547px) {
+  .highlight {
+    font-size: 10vw;
+  }
+  #btn-t {
+    width: 80%;
+  }
+  #btn-t span {
+    font-size: 20px;
+  }
+  #btn-me {
+    width: 80%;
+  }
+  #btn-me span {
+    font-size: 20px;
+  }
+  #btn-eml  {
+    width: 80%;
+  }
+  #btn-eml span {
+    font-size: 20px;
+  }
+}
 #flecha {
   font-weight: bold;
   position: relative;

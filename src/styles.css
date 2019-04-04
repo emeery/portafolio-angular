@@ -16,8 +16,19 @@
 .custom-tools .mat-card-content h3 {
   color: lightcyan;
 }
-.custom-tools .mat-progress-bar .mat-primary {
-  color: red;
+@media screen and (max-width:547px) {
+  .custom-tools .mat-dialog-container {
+    width: 400px !important;
+    background:  #34495e !important;
+  }
+  .custom-me .mat-dialog-container {
+    width: 400px !important;
+    background:  #34495e !important;
+  }
+  .mat-snack-bar-container {
+    width: 90px !important;
+    font-size: 3.1vw;
+  }
 }
 /* header */
 .custom-header .mat-toolbar {

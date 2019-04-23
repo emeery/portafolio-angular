@@ -2,23 +2,30 @@
   <div class="background">
     <app-header></app-header>
     <div class="center">
-      <span class="highlight"> Gerardo Bautista</span>,
-      <div (click)="openHerramientas()" id="btn-t"
-        class="btn-tools">
-        <span>Herramientas</span>
-        <i id="flecha" class="fas fa-chevron-right"></i>
-      </div>
-      <div (click)="openBiografia()" id="btn-me"
-        class="btn-tools">
-        <span>Biografía</span>
-        <i id="flecha" class="fas fa-chevron-right"></i>
-      </div>
-      <div (click)="openCorreo()" id="btn-eml"
-        class="btn-tools">
-        <span>Contacto</span>
-        <i id="flecha" class="fas fa-chevron-right"></i>
+      <span class="highlight"> Gerardo Bautista</span>
+      <footer></footer>
+    </div>
+  </div>
+ </div> <!-- home -->
+<div class="bio">
+  <div class="row"></div>
+  <div class="row2">
+          <div (click)="openBiografia()" class="hovereffect">
+              <img class="imagen" src="../../../assets/images/avatar.png" alt="">
+              <div class="overlay">
+
+                 <a class="info" href="#">click</a>
+              </div>
+          </div>
+    <div class="info2">
+      <div class="text">
+          <h2>
+              Hola, soy <span>Gerardo</span> y <br />
+              soy desarrollador <span id="web">web</span>. <br />
+              <i class="fas fa-map-marker-alt"></i> Ciudad de México
+          </h2>
+
       </div>
     </div>
-    <app-footer></app-footer>
   </div>
-</div>
+</div> <!-- bio -->

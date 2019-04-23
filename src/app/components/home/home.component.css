@@ -4,21 +4,29 @@
   height: 100vh;
   width: 100%;
   grid-template-columns: 1fr;
+
 }
 .background {
   background: url("https://momentumdash.com/backgrounds/01.jpg") center center/cover;
 }
 .center {
+  background: transparent;
+  height: 100%;
+  position: relative;
+  height: 40%;
+}
+/* .center {
+  background: slateblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   height: 100%;
-  background: transparent;
+
   margin: auto;
-  position: absolute;
+  position: relative;
   top: 0; left: 0; bottom: 0; right: 0;
-}
+} */
 .highlight {
   font-family: 'Oswald', sans-serif;
   font-size: 7vw;
@@ -26,9 +34,144 @@
   color: rgb(50, 154, 189);
   text-shadow: -1px 0 lightblue, 0 1px lightblue, 1px 0 lightblue, 0 -1px lightblue;
   text-transform: uppercase;
+
+  bottom: 0;right: 20%;
   display: flex;
-  justify-content: center;
+  position: absolute;
 }
+.bio {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+.row {
+  position: relative;
+  background:#2e4053;
+  height: 100%;
+  border-right-color: 2px solid slateblue;
+}
+.row2 {
+  position: relative;
+  background:  #1c2833;
+  display: flex;
+  flex-direction: column;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 40%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+.imagen {
+  width: 50%;
+}
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect:hover .overlay {
+  background-color: rgba(109, 139, 167, 0.4);
+}
+
+.hovereffect h2, .hovereffect img {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect img {
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  bottom: 0;top: 0;
+  position: relative;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.hovereffect:hover img {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: normal;
+  height: 85%;
+  width: 85%;
+  position: absolute;
+  top: -20%;
+  left: 8%;
+  padding: 70px;
+}
+
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  background-color: rgba(0,0,0,0.4);
+}
+
+
+.info2 {
+  position: relative;
+  background: #34495e;
+  border: 2px slateblue solid;
+  width: 100%;
+  height: 50%;
+}
+.text {
+  position: absolute;
+  bottom: 0;top: 0;left: 0;right: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+.info2 .text h2 {
+  color: lightblue;
+  font-family: 'Oswald', sans-serif;
+  font-size: 6vw;
+  text-transform: uppercase;
+}
+
 /* me */
 #btn-me:hover {
   border: 2px solid teal;
@@ -116,7 +259,7 @@
   -o-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
 }
-@media screen and (max-width:547px) {
+/* @media screen and (max-width:547px) {
   .highlight {
     font-size: 10vw;
   }
@@ -138,7 +281,7 @@
   #btn-eml span {
     font-size: 20px;
   }
-}
+} */
 #flecha {
   font-weight: bold;
   position: relative;

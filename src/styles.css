@@ -1,7 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+/* header */
+.custom-header .mat-toolbar {
+  background: transparent;
+}
+/* me */
+.custom-me .mat-dialog-container {
+  background: #34495e;
+  border: solid 2px teal;
+}
+.custom-me .mat-dialog-content .mat-card{
+  background: #34495e;
+}
+/* recetas */
+.custom-recetas .mat-dialog-container {
+  overflow-y: hidden;
+  background: #34495e;
+  width: 370px;
+  height: 350px;
+  border: solid 2px teal;
+}
+.custom-recetas .mat-dialog-content .mat-card{
+  background: #34495e;
+}
+.custom-recetas .mat-button {
+  color: blanchedalmond;
+  outline:none;
+}
+.custom-recetas .mat-button:hover {
+  color: lightsalmon;
+
+}
+/* snack */
+/* .mat-snack-bar-container {
+  background: #2e4053;
+  border: 2px solid #e74c3c;
+  width: 54% !important;
+}
+.mat-snack-bar-container .example-pizza-party {
+  color: lightblue;
+  font-size: 1.6em;
+} */
 /* tools */
-.custom-tools .mat-dialog-container {
+/* .custom-tools .mat-dialog-container {
   background:  #34495e !important;
   border: solid 2px rebeccapurple;
 }
@@ -29,27 +70,14 @@
     width: 90px !important;
     font-size: 3.1vw;
   }
+} */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-/* header */
-.custom-header .mat-toolbar {
-  background: transparent;
+body {
+  overflow-x: hidden;
 }
-/* me */
-.custom-me .mat-dialog-container {
-  background: #34495e;
-  border: solid 2px teal;
-}
-.custom-me .mat-dialog-content .mat-card{
-  background: #34495e;
-}
-/* snack */
-.mat-snack-bar-container {
-  background: #2e4053;
-  border: 2px solid #e74c3c;
-  width: 54% !important;
-}
-.mat-snack-bar-container .example-pizza-party {
-  color: lightblue;
-  font-size: 1.6em;
-}
-

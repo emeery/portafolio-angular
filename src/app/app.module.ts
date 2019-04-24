@@ -9,9 +9,10 @@ import { HomeComponent } from './components/home/home.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './material.module';
 import { FooterComponent } from './components/footer/footer.component';
-import { MeComponent } from './components/me/me.component';
 import { TechComponent } from './components/tech/tech.component';
 import { CorreoComponent } from './components/correo/correo.component';
+import { MeComponent } from './components/dialogos/me/me.component';
+import { RecetaComponent } from './components/dialogos/receta/receta.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +23,14 @@ import { CorreoComponent } from './components/correo/correo.component';
     CorreoComponent,
     FooterComponent,
     MeComponent,
+    RecetaComponent
   ],
-  entryComponents: [ TechComponent, MeComponent, CorreoComponent ],
+  entryComponents: [
+    TechComponent,
+    MeComponent,
+    CorreoComponent,
+    RecetaComponent
+  ],
   imports: [
     AngularMaterialModule,
     BrowserModule,

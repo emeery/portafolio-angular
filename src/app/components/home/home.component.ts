@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { MatDialog, MatSnackBar } from '@angular/material';
-import { TechComponent } from '../tech/tech.component';
-import { MeComponent } from '../me/me.component';
-import { CorreoComponent } from '../correo/correo.component';
+import { MeComponent } from '../dialogos/me/me.component';
+import { RecetaComponent } from '../dialogos/receta/receta.component';
+
 
 @Component({
   selector: 'app-home',
@@ -20,12 +20,12 @@ export class HomeComponent {
       behavior: 'smooth', block: 'start', inline: 'nearest'});
   }
   openBiografia() {
-    this.dlg.open(MeComponent , {
+    this.dlg.open(MeComponent, {
       panelClass: 'custom-me'
     });
   }
   openRecetas() {
-    this.dlg.open(MeComponent , {
+    this.dlg.open(RecetaComponent , {
       panelClass: 'custom-recetas'
     });
   }

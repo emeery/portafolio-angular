@@ -15,19 +15,28 @@ export class HomeComponent {
     private snack: MatSnackBar
   ) {}
   duracion = 5;
-  openHerramientas() {
-    this.dlg.open(TechComponent , {
-      panelClass: 'custom-tools'
-    });
+  scrollHacia(ele): void {
+    ele.scrollIntoView({
+      behavior: 'smooth', block: 'start', inline: 'nearest'});
   }
   openBiografia() {
     this.dlg.open(MeComponent , {
       panelClass: 'custom-me'
     });
   }
-  openCorreo() {
-    this.snack.openFromComponent(CorreoComponent, {
-      duration: this.duracion * 1000,
+  openRecetas() {
+    this.dlg.open(MeComponent , {
+      panelClass: 'custom-recetas'
     });
   }
+  // openHerramientas() {
+  //   this.dlg.open(TechComponent , {
+  //     panelClass: 'custom-tools'
+  //   });
+  // }
+  // openCorreo() {
+  //   this.snack.openFromComponent(CorreoComponent, {
+  //     duration: this.duracion * 1000,
+  //   });
+  // }
 }

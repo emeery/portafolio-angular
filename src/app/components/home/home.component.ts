@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatDialog, MatSnackBar } from '@angular/material';
 import { MeComponent } from '../dialogos/me/me.component';
 import { RecetaComponent } from '../dialogos/receta/receta.component';
+import { BuscadorComponent } from '../dialogos/buscador/buscador.component';
 
 
 @Component({
@@ -29,11 +30,11 @@ export class HomeComponent {
       panelClass: 'custom-recetas'
     });
   }
-  // openHerramientas() {
-  //   this.dlg.open(TechComponent , {
-  //     panelClass: 'custom-tools'
-  //   });
-  // }
+  openBuscador() {
+    this.dlg.open(BuscadorComponent , {
+      panelClass: 'custom-search'
+    });
+  }
   // openCorreo() {
   //   this.snack.openFromComponent(CorreoComponent, {
   //     duration: this.duracion * 1000,

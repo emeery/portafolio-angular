@@ -7,7 +7,7 @@
 
 }
 .background {
-  background: url("../../../assets/images/land.jpg") center center/cover;
+  background-image:linear-gradient(rgba(0,0,15,.8),rgba(0,0,15,.8)), url("../../../assets/images/land.jpg");
 }
 .center {
   background: transparent;
@@ -27,7 +27,6 @@
 .arrow {
   width: 20%;
   height: 100%;
-
 }
 .arrow i {
   cursor: pointer;
@@ -174,18 +173,33 @@
 .porta {
   height: 100vh;
   width: 100%;
-  background: #00141f;
+  background-image: linear-gradient(#00141f, lightblue);
   grid-template-columns: 35% 65%;
   position: relative;
 }
 .card-deck {
-  background:#00141f;
-  position: absolute;
-  bottom: 0;
+  background: transparent;
+  bottom: 30%;
 }
 .card-deck .card {
-  background: #00141f;
+  background: transparent;
   border: 2px solid orange;
+  cursor: pointer;
+  -webkit-transition: all .8s ease-in-out;
+}
+.card-deck #green:hover {
+  background: transparent;
+  border: 2px solid lightgreen;
+  cursor: pointer;
+}
+.card-deck #red:hover {
+  background: transparent;
+  border: 2px solid rgb(255, 17, 0);
+  cursor: pointer;
+}
+.card-deck #yellow:hover {
+  background: transparent;
+  border: 2px solid lightgoldenrodyellow;
   cursor: pointer;
 }
 .card-img-top {
@@ -196,13 +210,24 @@
 .card-img-top:hover  {
   filter: none;
   -webkit-filter: grayscale(0);
-  -webkit-transform: scale(1.01);
+  -webkit-transform: scale(1.08);
+}
+#hover-red:hover  {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.18);
 }
 .card-title {
   color: lightblue;
 }
 .card-text {
   color: rosybrown;
+}
+
+@media screen and (min-width:576px) {
+  .card-deck  {
+    position: absolute;
+  }
 }
 
 /* me */

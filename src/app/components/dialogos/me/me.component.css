@@ -1,0 +1,26 @@
+.me {
+  display: flex;
+  justify-content: center;
+}
+.me img {
+  width: 50%;
+}
+.text {
+  color: lightblue;
+  font-size: 1.1em;
+  text-align: center;
+}
+.text span {
+  font-weight: bold;
+}
+@media screen and (max-width:547px) {
+  .me img {
+    width: 40%;
+    height: 40%;
+  }
+}
+.fa-laptop-code {
+  color: slateblue;
+  display: flex;
+justify-content: center;
+}

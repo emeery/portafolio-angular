@@ -18,7 +18,7 @@
   background: #34495e;
   width: 370px;
   height: 350px;
-  border: solid 2px teal;
+  border: solid 2px lightgreen;
 }
 .custom-recetas .mat-dialog-content .mat-card{
   background: #34495e;
@@ -29,8 +29,26 @@
 }
 .custom-recetas .mat-button:hover {
   color: lightsalmon;
-
 }
+/* search */
+.custom-search .mat-dialog-container {
+  overflow-y: hidden;
+  background: #34495e;
+  width: 370px;
+  height: 350px;
+  border: solid 2px #d4401e;
+}
+.custom-search .mat-dialog-content .mat-card{
+  background: #34495e;
+}
+.custom-search .mat-button {
+  color: blanchedalmond;
+  outline:none;
+}
+.custom-search .mat-button:hover {
+  color: lightsalmon;
+}
+
 /* snack */
 /* .mat-snack-bar-container {
   background: #2e4053;

@@ -13,6 +13,7 @@ import { TechComponent } from './components/tech/tech.component';
 import { CorreoComponent } from './components/correo/correo.component';
 import { MeComponent } from './components/dialogos/me/me.component';
 import { RecetaComponent } from './components/dialogos/receta/receta.component';
+import { BuscadorComponent } from './components/dialogos/buscador/buscador.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +24,15 @@ import { RecetaComponent } from './components/dialogos/receta/receta.component';
     CorreoComponent,
     FooterComponent,
     MeComponent,
-    RecetaComponent
+    RecetaComponent,
+    BuscadorComponent
   ],
   entryComponents: [
     TechComponent,
     MeComponent,
     CorreoComponent,
-    RecetaComponent
+    RecetaComponent,
+    BuscadorComponent
   ],
   imports: [
     AngularMaterialModule,

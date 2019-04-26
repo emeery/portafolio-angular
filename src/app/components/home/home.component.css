@@ -218,16 +218,89 @@
   -webkit-transform: scale(1.18);
 }
 .card-title {
-  color: lightblue;
+  color: pink;
+  text-align: center;
 }
 .card-text {
   color: rosybrown;
 }
-
 @media screen and (min-width:576px) {
   .card-deck  {
     position: absolute;
   }
+}
+
+/* foot */
+.foot {
+  width: 100%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  background:  #212f3c;
+  position: absolute;
+  bottom: 0;
+}
+.logo {
+  position: relative;
+  display: flex;
+  position: absolute;
+  left: 30px;
+  bottom: 15px;
+}
+.logo i {color: darkslategrey;}
+.f-row2 {
+  border: 1px solid lightslategray;
+}
+.contacto {
+
+}
+.contacto h5 {
+  color: lightslategray;
+  font-family: Circular, Helvetica, Arial, sans-serif;
+  font-size: 2vh;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: flex;
+  margin-top: 5%;
+  justify-content: center;
+}
+.icns {
+  display: flex;
+  justify-content: center;
+}
+.icns i {
+  margin-right: 10px;
+  -moz-transition: all 0.25s ease-out;
+  -ms-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
+}
+.fa-linkedin {
+  color: lightslategray;
+}
+.fa-codepen {
+  color: lightslategray;
+}
+.fa-github {
+  color: lightslategray;
+}
+.fa-linkedin:hover {
+  color: orange;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.fa-codepen:hover  {
+  color: orange;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.fa-github:hover  {
+  color: orange;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 /* me */

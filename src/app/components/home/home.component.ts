@@ -3,6 +3,7 @@ import { MatDialog, MatSnackBar } from '@angular/material';
 import { MeComponent } from '../dialogos/me/me.component';
 import { RecetaComponent } from '../dialogos/receta/receta.component';
 import { BuscadorComponent } from '../dialogos/buscador/buscador.component';
+import { NotaComponent } from '../dialogos/nota/nota.component';
 
 
 @Component({
@@ -35,8 +36,13 @@ export class HomeComponent {
       panelClass: 'custom-search'
     });
   }
+  openNotas() {
+    this.dlg.open(NotaComponent, {
+      panelClass: 'custom-note'
+    });
+  }
   // openCorreo() {
-  //   this.snack.openFromComponent(CorreoComponent, {
+  //   this.snack.openFromComponent(NotaComponent, {
   //     duration: this.duracion * 1000,
   //   });
   // }

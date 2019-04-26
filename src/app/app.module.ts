@@ -14,6 +14,7 @@ import { CorreoComponent } from './components/correo/correo.component';
 import { MeComponent } from './components/dialogos/me/me.component';
 import { RecetaComponent } from './components/dialogos/receta/receta.component';
 import { BuscadorComponent } from './components/dialogos/buscador/buscador.component';
+import { NotaComponent } from './components/dialogos/nota/nota.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +26,16 @@ import { BuscadorComponent } from './components/dialogos/buscador/buscador.compo
     FooterComponent,
     MeComponent,
     RecetaComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    NotaComponent
   ],
   entryComponents: [
     TechComponent,
     MeComponent,
     CorreoComponent,
     RecetaComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    NotaComponent
   ],
   imports: [
     AngularMaterialModule,

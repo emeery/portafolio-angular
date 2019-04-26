@@ -48,6 +48,24 @@
 .custom-search .mat-button:hover {
   color: lightsalmon;
 }
+/* note */
+.custom-note .mat-dialog-container {
+  overflow-y: hidden;
+  background: #34495e;
+  width: 370px;
+  height: 350px;
+  border: solid 2px #d4401e;
+}
+.custom-note .mat-dialog-content .mat-card{
+  background: #34495e;
+}
+.custom-note .mat-button {
+  color: blanchedalmond;
+  outline:none;
+}
+.custom-note .mat-button:hover {
+  color: lightsalmon;
+}
 
 /* snack */
 /* .mat-snack-bar-container {

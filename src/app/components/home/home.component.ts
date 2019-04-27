@@ -4,6 +4,7 @@ import { MeComponent } from '../dialogos/me/me.component';
 import { RecetaComponent } from '../dialogos/receta/receta.component';
 import { BuscadorComponent } from '../dialogos/buscador/buscador.component';
 import { NotaComponent } from '../dialogos/nota/nota.component';
+import {CorreoComponent} from '../correo/correo.component';
 
 
 @Component({
@@ -41,9 +42,9 @@ export class HomeComponent {
       panelClass: 'custom-note'
     });
   }
-  // openCorreo() {
-  //   this.snack.openFromComponent(NotaComponent, {
-  //     duration: this.duracion * 1000,
-  //   });
-  // }
+  openCorreo() {
+    this.snack.openFromComponent(CorreoComponent, {
+      duration: this.duracion * 1000,
+    });
+  }
 }

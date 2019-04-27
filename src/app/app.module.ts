@@ -15,7 +15,7 @@ import { MeComponent } from './components/dialogos/me/me.component';
 import { RecetaComponent } from './components/dialogos/receta/receta.component';
 import { BuscadorComponent } from './components/dialogos/buscador/buscador.component';
 import { NotaComponent } from './components/dialogos/nota/nota.component';
-
+import { ParticlesModule } from 'angular-particle';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +41,7 @@ import { NotaComponent } from './components/dialogos/nota/nota.component';
     AngularMaterialModule,
     BrowserModule,
     BrowserAnimationsModule,
-    CompartidoModule
+    CompartidoModule, ParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

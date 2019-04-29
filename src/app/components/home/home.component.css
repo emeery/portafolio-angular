@@ -171,7 +171,7 @@
 }
 /* portafolio */
 .porta {
-  height: 181vh;
+  height: 300vh;
   width: 100%;
   background: linear-gradient(#00141f, lightblue);
   position: relative;
@@ -290,6 +290,8 @@
   color: lightslategray;
 }
 #email {cursor: pointer;}
+#ang {cursor: pointer;}
+#ang:hover {color: red;}
 .fa-at {
   color: lightslategray;
 }

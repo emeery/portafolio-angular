@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit{
               value: '#ff0000'
           },
           shape: {
-              type: 'triangle',
+              type: 'polygon',
           },
       }
     };

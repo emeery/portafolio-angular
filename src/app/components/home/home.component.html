@@ -1,15 +1,13 @@
 <div class="wrapper">
   <div class="home">
     <div class="background">
-        <app-header></app-header>
-        <particles [style]="style">
-          </particles>
-      <particles [style]="style">
-        </particles>
+      <app-header></app-header>
+      <particles [style]="style"> </particles>
+      <particles [style]="style"> </particles>
       <div class="fot">
-          <div (click)="scrollHacia(sushi)" class="arrow">
-              <i class="fas fa-angle-down fa-3x"></i>
-            </div>
+        <div (click)="scrollHacia(sushi)" class="arrow">
+          <i class="fas fa-angle-down fa-3x"></i>
+        </div>
       </div>
     </div>
   </div>
@@ -17,6 +15,10 @@
   <div #sushi class="bio">
     <div class="row"></div>
     <div class="row2">
+        <div class="section">
+            <h2>BIO</h2>
+            <hr>
+        </div>
       <div (click)="openBiografia()" class="hovereffect">
         <img class="imagen" src="../../../assets/images/avatar.png" alt="" />
         <div class="overlay">
@@ -36,6 +38,10 @@
   </div>
   <!-- bio -->
   <div class="porta">
+      <div class="portaf">
+          <h2>PORTAFOLIO</h2>
+          <hr>
+      </div>
     <div class="card-deck">
       <div id="green" (click)="openRecetas()" class="card">
         <img
@@ -45,7 +51,6 @@
         />
         <div class="card-body">
           <h5 class="card-title">Recetario</h5>
-
         </div>
       </div>
       <div id="red" (click)="openBuscador()" class="card">
@@ -53,8 +58,8 @@
           id="hover-red"
           class="card-img-top"
           src="../../../assets/images/yt.png"
-          alt="img"
         />
+
         <div class="card-body">
           <h5 class="card-title">Buscador de YouTube</h5>
         </div>
@@ -69,39 +74,43 @@
           <h5 class="card-title">Notas-App</h5>
         </div>
       </div>
-    </div> <!--  card-deck -->
+    </div>
+    <!--  card-deck -->
     <div class="foot">
       <div class="f-row">
-          <div class="logo">
-              <a  target="_blank"
-                href="https://github.com/emeery/portafolio-angular">
-                <i id="ang" class="fab fa-angular fa-4x"></i>
-                </a>
-          </div>
+        <div class="logo">
+          <a
+            target="_blank"
+            href="https://github.com/emeery/portafolio-angular"
+          >
+            <i id="ang" class="fab fa-angular fa-4x"></i>
+          </a>
+        </div>
       </div>
       <div class="f-row2">
-          <div class="contacto">
-            <h5>© 2019 Gerardo Bautista All Rights Reserved</h5> -
-            <div class="icns">
-                <a target="_blank"
-                href="https://www.linkedin.com/in/gerardo-bautista307/">
-                  <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-                <a target="_blank"
-                href="https://codepen.io/Emeeery">
-                <i class="fab fa-codepen fa-2x"></i>
-                </a>
-                <a target="_blank"
-                href="https://github.com/emeery">
-                <i class="fab fa-github fa-2x"></i>
-                </a>
-                <a id="email" (click)="openCorreo()"
-                >
-                <i class="fas fa-at fa-2x"></i>
-                </a>
-            </div>
+        <div class="contacto">
+          <h5>© 2019 Gerardo Bautista All Rights Reserved</h5>
+          -
+          <div class="icns">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/gerardo-bautista307/"
+            >
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a target="_blank" href="https://codepen.io/Emeeery">
+              <i class="fab fa-codepen fa-2x"></i>
+            </a>
+            <a target="_blank" href="https://github.com/emeery">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a id="email" (click)="openCorreo()">
+              <i class="fas fa-at fa-2x"></i>
+            </a>
           </div>
+        </div>
       </div>
     </div>
-  </div> <!-- porta -->
+  </div>
+  <!-- porta -->
 </div>

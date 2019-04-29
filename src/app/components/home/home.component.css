@@ -7,7 +7,19 @@
 
 }
 .background {
-  background-image:linear-gradient(rgba(0,0,15,.8),rgba(0,0,15,.8)), url("../../../assets/images/land.jpg");
+  background-image:linear-gradient(
+    rgba(0,0,15,.8),rgba(0,0,15,.8)),
+  url("../../../assets/images/land.jpg");
+  background-attachment: fixed !important;
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+.background::before {
+  background-attachment: initial !important;
+  background-position: center center !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
 }
 .center {
   background: transparent;
@@ -172,7 +184,7 @@
 }
 /* portafolio */
 .porta {
-  height: 290vh;
+  height: 295vh;
   width: 100%;
   background: linear-gradient(#00141f, lightblue);
   position: relative;

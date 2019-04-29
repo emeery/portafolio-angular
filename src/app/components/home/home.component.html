@@ -1,14 +1,13 @@
 <div class="wrapper">
   <div class="home">
     <div class="background">
-      <app-header></app-header>
-      <div class="center">
-        <span class="highlight"> Gerardo Bautista</span>
-      </div>
+        <app-header></app-header>
+      <particles [style]="style">
+      </particles>
       <div class="fot">
-        <div (click)="scrollHacia(sushi)" class="arrow">
-          <i class="fas fa-angle-down fa-3x"></i>
-        </div>
+          <div (click)="scrollHacia(sushi)" class="arrow">
+              <i class="fas fa-angle-down fa-3x"></i>
+            </div>
       </div>
     </div>
   </div>
@@ -72,7 +71,10 @@
     <div class="foot">
       <div class="f-row">
           <div class="logo">
-              <i class="fab fa-goodreads fa-4x"></i>
+              <a target="_blank"
+                href="https://www.linkedin.com/in/gerardo-bautista307/">
+                  <i class="fab fa-linkedin fa-2x"></i>
+                </a>
           </div>
       </div>
       <div class="f-row2">

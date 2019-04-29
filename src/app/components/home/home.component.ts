@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatSnackBar } from '@angular/material';
 import { MeComponent } from '../dialogos/me/me.component';
 import { RecetaComponent } from '../dialogos/receta/receta.component';
@@ -12,12 +12,37 @@ import {CorreoComponent} from '../correo/correo.component';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
+  myStyle: object = {};
+  myParams: object = {};
+  duracion = 5;
   constructor(
     public dlg: MatDialog,
     private snack: MatSnackBar
   ) {}
-  duracion = 5;
+  ngOnInit() {
+    this.myStyle = {
+      'width': '100%',
+      'height': '200%',
+      'top': 0,
+      'left': 0,
+      'right': 0,
+      'bottom': 0,
+    };
+    this.myParams = {
+      particles: {
+          number: {
+              value: 200,
+          },
+          color: {
+              value: '#ff0000'
+          },
+          shape: {
+              type: 'triangle',
+          },
+      }
+    };
+  }
   scrollHacia(ele): void {
     ele.scrollIntoView({
       behavior: 'smooth', block: 'start', inline: 'nearest'});

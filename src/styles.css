@@ -5,12 +5,17 @@
   background: transparent;
 }
 /* me */
-.custom-me .mat-dialog-container {
+/* .custom-me .mat-dialog-container {
   background: #34495e;
   border: solid 2px teal;
 }
 .custom-me .mat-dialog-content .mat-card{
   background: #34495e;
+} */
+.about .mat-card {
+  width: 100%;
+  background: transparent;
+  border: 2px solid orange;
 }
 /* recetas */
 .custom-recetas .mat-dialog-container {

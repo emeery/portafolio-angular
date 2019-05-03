@@ -109,8 +109,12 @@
   font-family: 'Oswald', sans-serif;
   font-size: 3.5vh;
 }
+@media screen and (max-width:556px) {
+  .about {width: 78%;}
+}
 @media screen and (max-width:890px) {
-  .about {top: 50%;position: absolute;width: 50%;}
+
+  .about {top: 50%;position: absolute;width: 77%;}
 
 }
 .grad1 {
